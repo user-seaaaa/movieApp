@@ -18,7 +18,6 @@ function Detail(){
     useEffect(() => {
         getMovie();
     },[]);
-    console.log(movie);
     return (
         <div>
             <h1>Detail</h1>
@@ -31,7 +30,6 @@ function Detail(){
                     id={movie.id}
                     coverImg={movie.medium_cover_image}
                     title = {movie.title}
-                    summary={movie.summary}
                     genres={movie.genres}
                 />
             </div>)
